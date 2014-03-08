@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		261CB18018CBE1EC000D5C2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261CB17F18CBE1EC000D5C2A /* Foundation.framework */; };
+		261CB18218CBE1EC000D5C2A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261CB18118CBE1EC000D5C2A /* CoreGraphics.framework */; };
+		261CB18418CBE1ED000D5C2A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261CB18318CBE1ED000D5C2A /* UIKit.framework */; };
+		261CB18A18CBE1ED000D5C2A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 261CB18818CBE1ED000D5C2A /* InfoPlist.strings */; };
+		261CB18C18CBE1ED000D5C2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 261CB18B18CBE1ED000D5C2A /* main.m */; };
+		261CB19018CBE1ED000D5C2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 261CB18F18CBE1ED000D5C2A /* AppDelegate.m */; };
+		261CB19318CBE1ED000D5C2A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261CB19118CBE1ED000D5C2A /* Main_iPhone.storyboard */; };
+		261CB19918CBE1ED000D5C2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 261CB19818CBE1ED000D5C2A /* ViewController.m */; };
+		261CB19B18CBE1ED000D5C2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261CB19A18CBE1ED000D5C2A /* Images.xcassets */; };
+		261CB1A218CBE1ED000D5C2A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261CB1A118CBE1ED000D5C2A /* XCTest.framework */; };
+		261CB1A318CBE1ED000D5C2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261CB17F18CBE1EC000D5C2A /* Foundation.framework */; };
+		261CB1A418CBE1ED000D5C2A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261CB18318CBE1ED000D5C2A /* UIKit.framework */; };
+		261CB1AC18CBE1ED000D5C2A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 261CB1AA18CBE1ED000D5C2A /* InfoPlist.strings */; };
+		261CB1AE18CBE1ED000D5C2A /* SimplePeripheralTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 261CB1AD18CBE1ED000D5C2A /* SimplePeripheralTests.m */; };
+		261CB1B818CBE217000D5C2A /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 261CB1B718CBE217000D5C2A /* README.txt */; };
+		261CB1C118CBE325000D5C2A /* PeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 261CB1BE18CBE325000D5C2A /* PeripheralManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		261CB1A518CBE1ED000D5C2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 261CB17418CBE1EC000D5C2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 261CB17B18CBE1EC000D5C2A;
+			remoteInfo = SimplePeripheral;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		261CB17C18CBE1EC000D5C2A /* SimplePeripheral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplePeripheral.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		261CB17F18CBE1EC000D5C2A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		261CB18118CBE1EC000D5C2A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		261CB18318CBE1ED000D5C2A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		261CB18718CBE1ED000D5C2A /* SimplePeripheral-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimplePeripheral-Info.plist"; sourceTree = "<group>"; };
+		261CB18918CBE1ED000D5C2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		261CB18B18CBE1ED000D5C2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		261CB18D18CBE1ED000D5C2A /* SimplePeripheral-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimplePeripheral-Prefix.pch"; sourceTree = "<group>"; };
+		261CB18E18CBE1ED000D5C2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		261CB18F18CBE1ED000D5C2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		261CB19218CBE1ED000D5C2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		261CB19718CBE1ED000D5C2A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		261CB19818CBE1ED000D5C2A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		261CB19A18CBE1ED000D5C2A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		261CB1A018CBE1ED000D5C2A /* SimplePeripheralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplePeripheralTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		261CB1A118CBE1ED000D5C2A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		261CB1A918CBE1ED000D5C2A /* SimplePeripheralTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimplePeripheralTests-Info.plist"; sourceTree = "<group>"; };
+		261CB1AB18CBE1ED000D5C2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		261CB1AD18CBE1ED000D5C2A /* SimplePeripheralTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimplePeripheralTests.m; sourceTree = "<group>"; };
+		261CB1B718CBE217000D5C2A /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		261CB1BE18CBE325000D5C2A /* PeripheralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PeripheralManager.m; path = SimplePeripheral/PeripheralManager.m; sourceTree = "<group>"; };
+		261CB1BF18CBE325000D5C2A /* PeripheralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PeripheralManager.h; path = SimplePeripheral/PeripheralManager.h; sourceTree = "<group>"; };
+		261CB1C018CBE325000D5C2A /* BLEInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLEInfo.h; path = SimplePeripheral/BLEInfo.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		261CB17918CBE1EC000D5C2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261CB18218CBE1EC000D5C2A /* CoreGraphics.framework in Frameworks */,
+				261CB18418CBE1ED000D5C2A /* UIKit.framework in Frameworks */,
+				261CB18018CBE1EC000D5C2A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261CB19D18CBE1ED000D5C2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261CB1A218CBE1ED000D5C2A /* XCTest.framework in Frameworks */,
+				261CB1A418CBE1ED000D5C2A /* UIKit.framework in Frameworks */,
+				261CB1A318CBE1ED000D5C2A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		261CB17318CBE1EC000D5C2A = {
+			isa = PBXGroup;
+			children = (
+				261CB1B718CBE217000D5C2A /* README.txt */,
+				261CB18518CBE1ED000D5C2A /* SimplePeripheral */,
+				261CB1A718CBE1ED000D5C2A /* SimplePeripheralTests */,
+				261CB17E18CBE1EC000D5C2A /* Frameworks */,
+				261CB17D18CBE1EC000D5C2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		261CB17D18CBE1EC000D5C2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				261CB17C18CBE1EC000D5C2A /* SimplePeripheral.app */,
+				261CB1A018CBE1ED000D5C2A /* SimplePeripheralTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		261CB17E18CBE1EC000D5C2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				261CB17F18CBE1EC000D5C2A /* Foundation.framework */,
+				261CB18118CBE1EC000D5C2A /* CoreGraphics.framework */,
+				261CB18318CBE1ED000D5C2A /* UIKit.framework */,
+				261CB1A118CBE1ED000D5C2A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		261CB18518CBE1ED000D5C2A /* SimplePeripheral */ = {
+			isa = PBXGroup;
+			children = (
+				261CB18E18CBE1ED000D5C2A /* AppDelegate.h */,
+				261CB18F18CBE1ED000D5C2A /* AppDelegate.m */,
+				261CB19118CBE1ED000D5C2A /* Main_iPhone.storyboard */,
+				261CB19718CBE1ED000D5C2A /* ViewController.h */,
+				261CB19818CBE1ED000D5C2A /* ViewController.m */,
+				261CB1B918CBE29F000D5C2A /* BLE */,
+				261CB19A18CBE1ED000D5C2A /* Images.xcassets */,
+				261CB18618CBE1ED000D5C2A /* Supporting Files */,
+			);
+			path = SimplePeripheral;
+			sourceTree = "<group>";
+		};
+		261CB18618CBE1ED000D5C2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				261CB18718CBE1ED000D5C2A /* SimplePeripheral-Info.plist */,
+				261CB18818CBE1ED000D5C2A /* InfoPlist.strings */,
+				261CB18B18CBE1ED000D5C2A /* main.m */,
+				261CB18D18CBE1ED000D5C2A /* SimplePeripheral-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		261CB1A718CBE1ED000D5C2A /* SimplePeripheralTests */ = {
+			isa = PBXGroup;
+			children = (
+				261CB1AD18CBE1ED000D5C2A /* SimplePeripheralTests.m */,
+				261CB1A818CBE1ED000D5C2A /* Supporting Files */,
+			);
+			path = SimplePeripheralTests;
+			sourceTree = "<group>";
+		};
+		261CB1A818CBE1ED000D5C2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				261CB1A918CBE1ED000D5C2A /* SimplePeripheralTests-Info.plist */,
+				261CB1AA18CBE1ED000D5C2A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		261CB1B918CBE29F000D5C2A /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				261CB1BE18CBE325000D5C2A /* PeripheralManager.m */,
+				261CB1BF18CBE325000D5C2A /* PeripheralManager.h */,
+				261CB1C018CBE325000D5C2A /* BLEInfo.h */,
+			);
+			name = BLE;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		261CB17B18CBE1EC000D5C2A /* SimplePeripheral */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 261CB1B118CBE1ED000D5C2A /* Build configuration list for PBXNativeTarget "SimplePeripheral" */;
+			buildPhases = (
+				261CB17818CBE1EC000D5C2A /* Sources */,
+				261CB17918CBE1EC000D5C2A /* Frameworks */,
+				261CB17A18CBE1EC000D5C2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimplePeripheral;
+			productName = SimplePeripheral;
+			productReference = 261CB17C18CBE1EC000D5C2A /* SimplePeripheral.app */;
+			productType = "com.apple.product-type.application";
+		};
+		261CB19F18CBE1ED000D5C2A /* SimplePeripheralTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 261CB1B418CBE1ED000D5C2A /* Build configuration list for PBXNativeTarget "SimplePeripheralTests" */;
+			buildPhases = (
+				261CB19C18CBE1ED000D5C2A /* Sources */,
+				261CB19D18CBE1ED000D5C2A /* Frameworks */,
+				261CB19E18CBE1ED000D5C2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				261CB1A618CBE1ED000D5C2A /* PBXTargetDependency */,
+			);
+			name = SimplePeripheralTests;
+			productName = SimplePeripheralTests;
+			productReference = 261CB1A018CBE1ED000D5C2A /* SimplePeripheralTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		261CB17418CBE1EC000D5C2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Nicolas Flacco";
+				TargetAttributes = {
+					261CB19F18CBE1ED000D5C2A = {
+						TestTargetID = 261CB17B18CBE1EC000D5C2A;
+					};
+				};
+			};
+			buildConfigurationList = 261CB17718CBE1EC000D5C2A /* Build configuration list for PBXProject "SimplePeripheral" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 261CB17318CBE1EC000D5C2A;
+			productRefGroup = 261CB17D18CBE1EC000D5C2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				261CB17B18CBE1EC000D5C2A /* SimplePeripheral */,
+				261CB19F18CBE1ED000D5C2A /* SimplePeripheralTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		261CB17A18CBE1EC000D5C2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261CB19B18CBE1ED000D5C2A /* Images.xcassets in Resources */,
+				261CB19318CBE1ED000D5C2A /* Main_iPhone.storyboard in Resources */,
+				261CB1B818CBE217000D5C2A /* README.txt in Resources */,
+				261CB18A18CBE1ED000D5C2A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261CB19E18CBE1ED000D5C2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261CB1AC18CBE1ED000D5C2A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		261CB17818CBE1EC000D5C2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261CB19918CBE1ED000D5C2A /* ViewController.m in Sources */,
+				261CB1C118CBE325000D5C2A /* PeripheralManager.m in Sources */,
+				261CB19018CBE1ED000D5C2A /* AppDelegate.m in Sources */,
+				261CB18C18CBE1ED000D5C2A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261CB19C18CBE1ED000D5C2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261CB1AE18CBE1ED000D5C2A /* SimplePeripheralTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		261CB1A618CBE1ED000D5C2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 261CB17B18CBE1EC000D5C2A /* SimplePeripheral */;
+			targetProxy = 261CB1A518CBE1ED000D5C2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		261CB18818CBE1ED000D5C2A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				261CB18918CBE1ED000D5C2A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		261CB19118CBE1ED000D5C2A /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				261CB19218CBE1ED000D5C2A /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		261CB1AA18CBE1ED000D5C2A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				261CB1AB18CBE1ED000D5C2A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		261CB1AF18CBE1ED000D5C2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		261CB1B018CBE1ED000D5C2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		261CB1B218CBE1ED000D5C2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimplePeripheral/SimplePeripheral-Prefix.pch";
+				INFOPLIST_FILE = "SimplePeripheral/SimplePeripheral-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		261CB1B318CBE1ED000D5C2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimplePeripheral/SimplePeripheral-Prefix.pch";
+				INFOPLIST_FILE = "SimplePeripheral/SimplePeripheral-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		261CB1B518CBE1ED000D5C2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimplePeripheral.app/SimplePeripheral";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimplePeripheral/SimplePeripheral-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SimplePeripheralTests/SimplePeripheralTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		261CB1B618CBE1ED000D5C2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimplePeripheral.app/SimplePeripheral";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimplePeripheral/SimplePeripheral-Prefix.pch";
+				INFOPLIST_FILE = "SimplePeripheralTests/SimplePeripheralTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		261CB17718CBE1EC000D5C2A /* Build configuration list for PBXProject "SimplePeripheral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261CB1AF18CBE1ED000D5C2A /* Debug */,
+				261CB1B018CBE1ED000D5C2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		261CB1B118CBE1ED000D5C2A /* Build configuration list for PBXNativeTarget "SimplePeripheral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261CB1B218CBE1ED000D5C2A /* Debug */,
+				261CB1B318CBE1ED000D5C2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		261CB1B418CBE1ED000D5C2A /* Build configuration list for PBXNativeTarget "SimplePeripheralTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261CB1B518CBE1ED000D5C2A /* Debug */,
+				261CB1B618CBE1ED000D5C2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 261CB17418CBE1EC000D5C2A /* Project object */;
+}
