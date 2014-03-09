@@ -47,7 +47,7 @@
 - (void)startBroadcasting
 {
     NSLog(@"PM startBroadcasting");
-    [_peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:SERVICE_UUID]] }];
+    [_peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[SERVICE_CBUUID] }];
 }
 
 - (void)stopBroadcasting
@@ -101,13 +101,12 @@
     // ... so build our service.
     
     // The notify characteristic
-    _notifyCharacteristic = [[CBMutableCharacteristic alloc]initWithType:[CBUUID UUIDWithString:NOTIFY_CHARACTERISTIC_UUID]
+    _notifyCharacteristic = [[CBMutableCharacteristic alloc]initWithType:NOTIFY_CHARACTERISTIC_CBUUID
                                                                   properties:CBCharacteristicPropertyNotify value:nil
                                                                  permissions:CBAttributePermissionsReadable];
     
     // Add the characteristic to the service
-    CBMutableService *notifyService = [[CBMutableService alloc] initWithType:[CBUUID UUIDWithString:SERVICE_UUID]
-                                                                       primary:YES];
+    CBMutableService *notifyService = [[CBMutableService alloc] initWithType:SERVICE_CBUUID primary:YES];
     notifyService.characteristics = @[_notifyCharacteristic];
     
     // And add it to the peripheral manager
