@@ -14,7 +14,6 @@
 @property(nonatomic,strong) CBPeripheralManager         *peripheralManager;
 @property (strong, nonatomic) CBMutableCharacteristic   *notifyCharacteristic;
 @property(nonatomic,strong) NSMutableSet                *centrals;
-@property(nonatomic,strong) NSMutableArray              *notificationQueue;
 @end
 
 @implementation PeripheralManager
@@ -38,8 +37,6 @@
                                                             queue:queue
                                                           options:nil];
         _centrals = [[NSMutableSet alloc] init];
-        _notificationQueue = [[NSMutableArray alloc] init];
-        // NOTE: We could do background stuff here
     }
     return self;
 }
@@ -59,29 +56,15 @@
 - (void)notifyCentrals:(NSString *)msg
 {
     // TODO: Hack! We are sending to all
-    NSLog(@"BTM notifyPeer (All peers, currently)");
+    NSLog(@"PM notifyPeer (All peers, currently)");
     
     // Queue the data
     if ([_centrals count] > 0)
     {
-        [self chunkData:[msg dataUsingEncoding:NSUTF8StringEncoding] withQueue:_notificationQueue];
-    
-        // Send all the data
-        while ([_notificationQueue count] > 0)
-        {
-            NSData *chunk = [_notificationQueue objectAtIndex:0];
-            
-            NSLog(@"PM Sending Datum:%@", chunk);
-            
-            [_notificationQueue removeObjectAtIndex:0];
-            for (CBCentral *central in _centrals)
-            {
-                // TODO: Send a chunked message
-                [_peripheralManager updateValue:chunk
-                                  forCharacteristic:_notifyCharacteristic
-                               onSubscribedCentrals:nil];
-            }
-        }
+        NSData *data = [msg dataUsingEncoding:NSUTF8StringEncoding];
+        [_peripheralManager updateValue:data
+                      forCharacteristic:_notifyCharacteristic
+                   onSubscribedCentrals:nil];
     }
 
 }
@@ -127,27 +110,6 @@
 {
     NSLog(@"PM Central unsubscribed from characteristic");
     [_centrals removeObject:central];
-}
-
-#pragma mark - Message chunking functions
-
-- (NSData *) eom
-{
-    return [[NSData alloc]init]; // empty data // empty data
-}
-
-- (void) chunkData:(NSData *)data withQueue:(NSMutableArray *)queue {
-    NSUInteger length = [data length];
-    NSUInteger offset = 0;
-    do {
-        NSUInteger thisChunkSize = length - offset > NOTIFY_MTU ? NOTIFY_MTU : length - offset;
-        NSData *chunk = [data subdataWithRange:NSMakeRange(offset, thisChunkSize)];
-        offset += thisChunkSize;
-        // do something with chunk
-        [queue addObject:chunk];
-    } while (offset < length);
-    
-    [queue addObject:[self eom]];
 }
 
 @end
